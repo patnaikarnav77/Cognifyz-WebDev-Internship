@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+nav{background:#333;overflow:hidden}
+nav a{float:left;color:white;padding:14px;text-decoration:none}
+.hamburger{display:none;color:white;font-size:24px;padding:14px;cursor:pointer}
+@media (max-width:600px){
+  nav a{display:none}
+  nav a.active{display:block}
+  .hamburger{display:block}
+}
+</style></head>
+<body>
+<nav id="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+</nav>
+<script>
+function toggleMenu(){
+  const links = document.querySelectorAll('#navbar a');
+  links.forEach(a => a.classList.toggle('active'));
+}
+</script>
+</body>
+</html>
