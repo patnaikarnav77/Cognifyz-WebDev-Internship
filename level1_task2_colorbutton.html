@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;padding:50px">
+  <button id="btn" onclick="changeColor()" style="padding:15px 30px;font-size:16px">Click Me</button>
+  <script>
+    function changeColor(){
+      const colors=['red','blue','green','orange','purple'];
+      document.getElementById('btn').style.background = colors[Math.floor(Math.random()*colors.length)];
+    }
+  </script>
+</body>
+</html>
