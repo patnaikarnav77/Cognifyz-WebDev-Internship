@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;padding:50px;font-family:Arial">
+  <input type="number" id="a" placeholder="Number 1">
+  <input type="number" id="b" placeholder="Number 2">
+  <button onclick="add()">Add</button>
+  <h2 id="result"></h2>
+  <script>
+    function add(){
+      const a = Number(document.getElementById('a').value);
+      const b = Number(document.getElementById('b').value);
+      document.getElementById('result').innerText = "Result: " + (a+b);
+    }
+  </script>
+</body>
+</html>
